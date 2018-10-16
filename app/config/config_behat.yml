@@ -6,7 +6,7 @@ framework:
     router:
         resource: "%kernel.root_dir%/config/routing_behat.yml"
     profiler:
-        collect: false
+        enabled: false
 
 web_profiler:
     toolbar: false
