@@ -94,7 +94,7 @@ if [[ -n "${DEPENDENCY_PACKAGE_NAME}" ]]; then
 fi
 
 echo '> Run composer install inside docker app container'
-docker-compose exec app sh -c 'composer install --no-suggest --no-progress --no-interaction --prefer-dist --optimize-autoloader'
+docker-compose exec app sh -c 'composer install --no-suggest --no-progress --no-interaction --prefer-source --optimize-autoloader'
 
 # for behat builds to work
 echo '> Change ownership of files inside docker container'
