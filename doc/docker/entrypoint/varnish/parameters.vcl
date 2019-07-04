@@ -14,5 +14,6 @@ acl invalidators {
 // ACL for debuggers IP
 acl debuggers {
     "127.0.0.1";
+    "web";
     "172.16.0.0"/20;
 }
