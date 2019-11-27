@@ -74,7 +74,7 @@
         "dmore/chrome-mink-driver": "^2.7",
         "ezsystems/allure-behat": "^3.0",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1@dev",
-        "ezsystems/behatbundle": "^8.0@dev",
+        "ezsystems/behatbundle": "dev-fix-query-controller-test as 8.0.x-dev",
         "liuggio/fastest": "^1.6",
         "overblog/graphiql-bundle": "^0.1.2",
         "symfony/debug-pack": "^1.0",
