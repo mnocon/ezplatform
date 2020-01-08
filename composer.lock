@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a37f2e4e7f5474aac61433897dfc2a3",
+    "content-hash": "31dfcad85d4d4a1254e957a0e1ad29b3",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1089,16 +1089,16 @@
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "6.13.x-dev",
+            "version": "dev-EZP-31268-fix-rest-functional-tests",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "a101422c93daee3809d1c703107ddfba903c58eb"
+                "url": "https://github.com/mnocon/ezpublish-kernel.git",
+                "reference": "f346c20729a4c351e7958cb54199e9145d28e3cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/a101422c93daee3809d1c703107ddfba903c58eb",
-                "reference": "a101422c93daee3809d1c703107ddfba903c58eb",
+                "url": "https://api.github.com/repos/mnocon/ezpublish-kernel/zipball/f346c20729a4c351e7958cb54199e9145d28e3cd",
+                "reference": "f346c20729a4c351e7958cb54199e9145d28e3cd",
                 "shasum": ""
             },
             "require": {
@@ -1169,13 +1169,24 @@
                     "eZ": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "fix-cs": [
+                    "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
+                ],
+                "test": [
+                    "phpunit -c phpunit.xml",
+                    "phpunit -c phpunit-integration-legacy.xml"
+                ]
+            },
             "license": [
                 "GPL-2.0-only"
             ],
             "description": "Kernel used by ezsystems/ezplatform and derivatives. Provides the Content Repository, its APIs, and the application's Symfony framework integration.",
             "homepage": "https://ezplatform.com",
-            "time": "2020-01-03T09:50:12+00:00"
+            "support": {
+                "source": "https://github.com/mnocon/ezpublish-kernel/tree/EZP-31268-fix-rest-functional-tests"
+            },
+            "time": "2020-01-08T13:47:20+00:00"
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
@@ -7427,7 +7438,14 @@
             "time": "2019-11-24T13:36:37+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "6.13.x-dev",
+            "alias_normalized": "6.13.9999999.9999999-dev",
+            "version": "dev-EZP-31268-fix-rest-functional-tests",
+            "package": "ezsystems/ezpublish-kernel"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "ezplatform-i18n/ezplatform-i18n-ach_ug": 20,
