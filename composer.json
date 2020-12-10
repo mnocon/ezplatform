@@ -20,7 +20,7 @@
         "ezsystems/ezplatform-admin-ui": "^2.2@dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.3.0@beta",
         "ezsystems/ezplatform-content-forms": "^1.2@dev",
-        "ezsystems/ezplatform-core": "^2.2@dev",
+        "ezsystems/ezplatform-core": "dev-revert-25-compiler_passes as 2.3.x-dev",
         "ezsystems/ezplatform-cron": "^3.1@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-graphql": "^2.2@dev",
